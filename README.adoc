@@ -1,0 +1,21 @@
+= Simple Task
+
+Runs a simple Spring Cloud Task (Boot) app that prints `Hello World`.
+Using the instruction below the task will record the task execution to an
+external MySQL DB.
+
+== Build
+
+```
+mvn clean install 
+```
+
+== Run from Command Line
+
+```
+export spring_datasource_url=jdbc:mariadb://localhost:3306/<YOURDB>
+export spring_datasource_username=<YOUR_USER_NAME>
+export spring_datasource_password=<YOUR_USER_PASSWORD>
+export spring_datasource_driverClassName=org.mariadb.jdbc.Driver
+java -jar target/simpletask-0.0.1-SNAPSHOT.jar
+```
