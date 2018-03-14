@@ -20,6 +20,7 @@ public class SimpletaskApplication {
 			@Override
 			public void run(String... strings) throws Exception {
 				System.out.println("Hello World");
+				//throw new IllegalStateException("WOOPS");
 			}
 		};
 	}
